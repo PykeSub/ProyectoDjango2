@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Shop</title>
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+</head>
+<body>
+
+    <header>
+        <img src="{% static 'logo.png' %}">
+        <h1>{{categoria}}</h1>
+    </header>
+
+    <main>
+        <div class="producto-grid">
+            {% for producto in productos %}
+                <div class="producto">
+                    <img src="{% static 'unnamed.jpg' %}">
+                    <p>{{producto}}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="/"><button>Volver</button></a>
+    </main>
+
+</body>
+</html>

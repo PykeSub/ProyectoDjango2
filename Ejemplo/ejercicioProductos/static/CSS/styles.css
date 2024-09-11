@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header img {
+    width: 100px;
+}
+
+.producto-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.producto {
+    text-align: center;
+}
